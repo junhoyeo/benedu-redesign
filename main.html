@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+  <title>대시보드</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="./css/default.css" />
+  <link rel="stylesheet" type="text/css" href="./css/main.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar-container">
+        <img class="brand" src="./images/benedu.png">
+        <div class="profile">
+          <img class="image" src="https://api.dimigo.hs.kr/user_photo/photo1_002095_hanaro0704_jFGiKj.jpg" />
+          <span class="name">1학년 5반 여준호</span>
+          <a class="logout">로그아웃</a>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="sidemenu">
+        <!-- <div class="brand">
+          베네듀
+          <img src="./images/benedu.png">
+        </div> -->
+        <ul>
+          <li class="selected">대시보드</li>
+          <li>내 성적</li>
+          <li>진로관리</li>
+          <li>학습 플래너</li>
+          <li>학습하기</li>
+          <li>마이 베네듀</li>
+          <li>공지사항 <span class="circle"></span></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="stats">
+          <img class="illust" src="./images/bar.svg">
+          <canvas id="stats-canvas"></canvas>
+          <div class="overlay"></div>
+          <div class="content">
+            <span class="desc">베네듀로 좋은공부 많이하자!</span>
+            <h1>
+              <span class="stats-points">
+                총 포인트 <span class="value">1068점</span>
+              </span>
+              <span class="stats-rank">
+                디미고에서 <span class="value">56등</span>
+              </span>
+            </h1>
+          </div>
+        </div>
+        <h1>최근 포트폴리오 활동</h1>
+        <div class="portfolio-list">
+          <div class="portfolio-item">
+            <div class="portfolio-top">
+              <img src="./images/books/book1.jpg" />
+              <div class="portfolio-box">
+                <h2 class="title">[프로그래밍] 누워서 읽는 알고리즘</h2>
+                <span class="meta">
+                  <span class="date">2019-01-29</span>
+                  <span class="type">독서활동</span>
+                </span>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <p>알고리즘은 어떤 문제를 풀기 위한 절차를 공식화한 형태로 표현하는 것을 말한다. 이 책은 흥미로운 퍼즐 여러 개로 알고리즘을 다룬다. 그 중 자기 자신의 소스코드를 출력하는 프로그램인 콰인에 관한 문제(P를 출력하는 프로그램 P)가 가장 인상깊었다. C언어로 만든 간단한 콰인 소스코드가 소개되어 있었다.</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-top">
+              <img src="./images/books/book2.jpg" />
+              <div class="portfolio-box">
+                <h2 class="title">[진로] 기획의 정석</h2>
+                <span class="meta">
+                  <span class="date">2019-01-29</span>
+                  <span class="type">독서활동</span>
+                </span>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <p>이 책에 의하면 기획은 문제와 그 해결책을 찾는 planning, 기획서를 써서 계획을 타인에게 제안하는 proposal, 그리고 이를 발표하는 presentation으로 이루어진다. 기획의 전제조건은 ‘상대방’이다. 즉 위의 순서대로 진행하면서 결국 상대방의 머리에 어떤 그림을 그리는지에 따라서 해당 기획의 생사가 결정되는 것이다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/confetti.min.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>

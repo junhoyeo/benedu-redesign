@@ -1,6 +1,18 @@
 * {
-  color: #4D4835;
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus,
+button:focus {
+  outline: none;
 }
 
 nav.navbar {
@@ -19,11 +31,7 @@ div.navbar-container {
   width: 85%;
 }
 
-button {
-  cursor: pointer;
-}
-
-input:focus,
-button:focus {
-  outline: none;
+img.brand {
+  width: 55px;
+  height: 55px;
 }

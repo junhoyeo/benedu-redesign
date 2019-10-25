@@ -3,10 +3,6 @@
   -webkit-user-drag: none;
 }
 
-h1, h2, p {
-  margin: 0;
-}
-
 section.section {
   height: 100vh;
   display: flex;
@@ -64,11 +60,6 @@ section.cover div.container.right {
   width: 42%;
 }
 
-section.cover img.brand {
-  width: 55px;
-  height: 55px;
-}
-
 section.cover div.info {
   display: flex;
   flex-direction: column;
@@ -113,7 +104,9 @@ div.info div.buttons a {
   display: flex;
   align-items: center;
   filter: contrast(0.2);
-  margin-right: 1.2rem;
+  margin-right: 1.5rem;
+
+  transition: filter 0.3s linear;
 }
 
 div.info div.buttons a:hover,

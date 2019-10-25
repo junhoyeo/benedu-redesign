@@ -1,0 +1,224 @@
+div.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #262626;
+  color: white;
+}
+
+nav.navbar {
+  position: unset;
+  top: unset;
+}
+
+div.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.content { 
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+}
+
+div.sidemenu {
+  flex-shrink: 0;
+  height: 100vh;
+  width: 12rem;
+  background-image: linear-gradient(to left, #353535, rgba(53, 53, 53, 0));
+}
+
+div.sidemenu div.brand {
+  padding: 1.2rem;
+}
+
+div.sidemenu div.brand img {
+  width: 45px;
+  height: 45px;
+}
+
+div.sidemenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.sidemenu li {
+  /* item */
+  font-size: 15px;
+  font-weight: 600;
+  padding: 1.1rem 1.2rem;
+  color: white;
+
+  display: flex;
+  cursor: pointer;
+}
+
+div.sidemenu li.selected {
+  color: black;
+  background-image: linear-gradient(to right, #FFD600, #FFC900);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+div.sidemenu span.circle {
+  background: #FFC900;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  align-self: baseline;
+  margin-left: 0.5rem;
+}
+
+div.main {
+  width: 65%;
+  /* flex: 1 1; */
+}
+
+div.profile {
+  display: flex;
+  align-items: center;
+}
+
+div.profile img.image {
+  height: 35px;
+  width: 35px;
+  border: 1px solid #4D4835;
+  border-radius: 50%;
+  object-fit: contain;
+  object-position: center;
+  background-color: white;
+  margin-right: 0.8rem;
+}
+
+div.profile span.name {
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-right: 0.8rem;
+}
+
+div.stats {
+  position: relative;
+  height: 220px;
+}
+
+div.stats span.desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 2.5px;
+}
+
+div.stats canvas#stats-canvas {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  filter: opacity(0.9);
+}
+
+div.stats div.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.0) 30%,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.4)
+  );
+}
+
+div.stats img.illust {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  height: 200px;
+}
+
+div.stats div.content {
+  position: absolute;
+  padding-top: 1.5rem;
+  padding-left: 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+div.stats h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+div.stats h1 span.value {
+  font-weight: 900;
+}
+
+div.portfolio-list {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+div.portfolio-item {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.8rem;
+}
+
+div.portfolio-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+div.portfolio-box {
+  margin-left: 0.5rem;
+}
+
+div.portfolio-box h2.title {
+  font-size: 1.2rem;
+  font-weight: 300;
+  word-break: keep-all;
+  width: 180px;
+}
+
+div.portfolio-box span.date {
+  font-weight: 400;
+}
+
+div.portfolio-box span.type {
+  font-weight: 700;
+}
+
+div.portfolio-item img {
+  height: 175px;
+  width: 120px;
+  border-radius: 3px;
+  margin-right: 0.3rem;
+}
+
+div.portfolio-content {
+  border-radius: 12px;
+  padding: 0.5rem 0.8rem;
+  margin-top: -2rem;
+  background-image: linear-gradient(to bottom, #414141 35%, #35353500);;
+}
+
+div.portfolio-content p {
+  height: 100px;
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
