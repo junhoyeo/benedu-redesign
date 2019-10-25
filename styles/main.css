@@ -85,7 +85,6 @@ div.profile {
 div.profile img.image {
   height: 35px;
   width: 35px;
-  border: 1px solid #4D4835;
   border-radius: 50%;
   object-fit: contain;
   object-position: center;
@@ -162,10 +161,27 @@ div.stats h1 span.value {
   font-weight: 900;
 }
 
+section.section {
+  padding: 1.2rem 1.8rem;
+}
+
+h1.section-title {
+  font-size: 1.5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+h1.section-title img.icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 0.8rem;
+}
+
 div.portfolio-list {
   display: flex;
   margin-top: 1rem;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 div.portfolio-item {

@@ -1,0 +1,60 @@
+div.calender {
+  margin-top: 1rem;
+
+  background-image: linear-gradient(to bottom, #414141 35%, #35353500);;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+div.calender-top {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+
+  background-image: linear-gradient(to right, rgb(255, 221, 51), rgb(255, 208, 0));
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  color: #414141;
+}
+
+div.calender-top span.week {
+  font-weight: 900;
+  margin-right: 0.3rem;
+}
+
+div.calender-row {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 1.2rem; */
+}
+
+div.calender-cell {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.calender-cell div.meta {
+  margin: 3px 5px;
+  margin-bottom: 0;
+  display: flex;
+}
+
+div.calender-cell span.date {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-right: 2px;
+}
+
+div.calender-cell span.day {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+div.calender-cell:not(:last-child) {
+  border-right: 1px solid rgba(133, 133, 133, 0.7);
+}
