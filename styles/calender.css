@@ -29,10 +29,16 @@ div.calender-row {
   display: flex;
   justify-content: space-between;
   /* padding: 0 1.2rem; */
+  position: relative;
+}
+
+div.calender-tags {
+  position: absolute;
+  bottom: 0;
 }
 
 div.calender-cell {
-  width: 30%;
+  width: -webkit-fill-available;
   height: 100px;
   display: flex;
   flex-direction: column;

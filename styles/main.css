@@ -1,3 +1,7 @@
+html {
+  background-color: #262626;
+}
+
 div.container {
   position: relative;
   display: flex;
@@ -17,7 +21,7 @@ div.navbar-container {
   justify-content: space-between;
 }
 
-a.logout {
+a.button {
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: 300;
@@ -39,7 +43,7 @@ div.content {
 div.sidemenu {
   flex-shrink: 0;
   height: 100vh;
-  width: 12rem;
+  width: 11.2rem;
   background-image: linear-gradient(to left, #353535, rgba(53, 53, 53, 0));
 }
 
@@ -86,8 +90,7 @@ div.sidemenu span.circle {
 }
 
 div.main {
-  width: 65%;
-  /* flex: 1 1; */
+  width: max-content;
 }
 
 div.profile {
@@ -189,4 +192,136 @@ h1.section-title img.icon {
   height: 30px;
   width: 30px;
   margin-right: 0.8rem;
+}
+
+/* right side section */
+
+div.right {
+  width: 18rem;
+  flex-shrink: 0;
+}
+
+section.right-section {
+  padding: 1.2rem 1.8rem;
+  padding-right: 0;
+}
+
+section.right-section p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+section.right-section:first-child {
+  padding-top: 0.2rem;
+}
+
+div.goal-list {
+  margin-top: 0.8rem;
+}
+
+div.goal-item {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #505050;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+div.goal-item:last-child {
+  border-bottom: 0;
+}
+
+div.goal-item span.field {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+div.goal-item span.value {
+  font-size: 0.98rem;
+  font-weight: 300;
+}
+
+div.goal-item:nth-child(2) {
+  flex-direction: column;
+}
+
+div.goal-item:nth-child(2) span.value {
+  align-self: flex-end;
+}
+
+div.word-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8rem;
+}
+
+div.word-item {
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 0.38rem;
+  position: relative;
+  height: 0.8rem;
+}
+
+div.word-background {
+  z-index: 2;
+  position: absolute;
+  /* width: 100%; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right,
+    #35353500,
+    rgba(53, 53, 53, 0.4),
+    rgba(53, 53, 53, 0.8),
+    #353535
+  );
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+div.word-content {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+div.word-item:nth-of-type(2) div.word-background {
+  width: 95%;
+}
+
+div.word-item:nth-child(3) div.word-background {
+  width: 90%;
+}
+
+div.word-item:nth-child(4) div.word-background {
+  width: 85%;
+}
+
+div.word-item:nth-child(5) div.word-background {
+  width: 80%;
+}
+
+div.word-item span.word-en {
+  text-transform: capitalize;
+}
+
+div.word-item:hover div.word-background {
+  z-index: 1;
+}
+
+div.word-item:hover div.word-content {
+  z-index: 2;
+  font-weight: 500;
 }
