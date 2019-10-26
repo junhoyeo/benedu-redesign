@@ -36,6 +36,42 @@ div.calender-cell {
   height: 100px;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+div.calender-cell div.today {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  display: flex;
+
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #ffd000;
+}
+
+div.calender-cell div.today span.circle {
+  align-self: center;
+  margin-right: 0.3rem;
+
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  background-image: linear-gradient(to right, rgb(255, 221, 51), rgb(255, 208, 0));
+}
+
+div.calender-cell.sat {
+  background-image: linear-gradient(
+    rgba(0, 199, 228, 0.12) 5%,
+    rgba(65, 65, 65, 0)
+  );
+}
+
+div.calender-cell.rest {
+  background-image: linear-gradient(
+    rgba(230, 61, 135, 0.12) 5%,
+    rgba(65, 65, 65, 0)
+  );
 }
 
 div.calender-cell div.meta {
