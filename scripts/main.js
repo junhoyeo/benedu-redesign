@@ -36,3 +36,37 @@ countScore.start()
 
 const countRank = new CountUp('countup-rank', 0, 56, 0, 1.5)
 countRank.start()
+
+let isWeatherComplete = false
+const weatherTimeline = anime.timeline({
+  direction: 'alternate',
+  loop: false,
+  begin: function(_) {
+    isWeatherComplete = false
+  },
+  complete: function(_) {
+    isWeatherComplete = true
+  }
+})
+
+weatherTimeline.add({
+  targets: '.weather-illust svg path',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 1400,
+  delay: function(_, i) { return i * 120 },
+  direction: 'alternate',
+}).add({
+  targets: '.weather-illust svg path.cloud',
+  stroke: '#FFF',
+  easing: 'linear',
+  duration: 300,
+})
+
+weatherTimeline.play()
+
+function onHoverWeather() {
+  if (!isWeatherComplete)
+    return
+  weatherTimeline.restart()
+}

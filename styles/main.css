@@ -243,3 +243,13 @@ section.right-section:first-child {
 div.section-side {
   display: flex;
 }
+
+div.weather-illust {
+  display: flex;
+  justify-content: center;
+  margin: 0.8rem 0;
+}
+
+div.weather-illust svg {
+  width: 50%;
+}

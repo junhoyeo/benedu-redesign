@@ -1,8 +1,8 @@
-div.goal-list {
+div.table-list {
   margin-top: 0.8rem;
 }
 
-div.goal-item {
+div.table-item {
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px dashed #505050;
@@ -11,25 +11,30 @@ div.goal-item {
   justify-content: space-between;
 }
 
-div.goal-item:last-child {
+div.table-item:last-child {
   border-bottom: 0;
 }
 
-div.goal-item span.field {
+div.table-item span.field {
   font-size: 1rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
 }
 
-div.goal-item span.value {
+div.table-item span.value {
   font-size: 0.98rem;
   font-weight: 300;
 }
 
-div.goal-item:nth-child(2) {
+div.table-item.long {
   flex-direction: column;
 }
 
-div.goal-item:nth-child(2) span.value {
+div.table-item.long span.value {
   align-self: flex-end;
+}
+
+div.table-item span.num {
+  font-weight: 500;
+  font-size: 1.1rem;
 }
