@@ -35,14 +35,15 @@ a.button {
 }
 
 div.content { 
-  width: 85%;
+  width: 88%;
   display: flex;
   flex-direction: row;
 }
 
 div.sidemenu {
   flex-shrink: 0;
-  height: 100vh;
+  /* height: 100vh; */
+  height: unset;
   width: 11.2rem;
   background-image: linear-gradient(to left, #353535, rgba(53, 53, 53, 0));
 }
@@ -204,16 +205,18 @@ section.section.row {
 
 div.section-side {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 div.section-side:first-child {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 /* right side section */
 
 div.right {
-  width: 18rem;
+  width: 19rem;
   flex-shrink: 0;
 }
 

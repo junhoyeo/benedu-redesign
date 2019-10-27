@@ -1,0 +1,109 @@
+div.prob-list {
+  margin-top: 0.8rem;
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-image: linear-gradient(to bottom, #353535, rgba(53, 53, 53, 0));
+}
+
+div.prob-item {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px dashed #505050;
+  transition: background 1s ease-out;
+}
+
+div.prob-item:last-child {
+  border-bottom: none;
+}
+
+div.prob-background {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: linear-gradient(to right, rgba(26, 26, 26, 0.8) 5%, #41414100);
+  transition: opacity 0.5s linear;
+}
+
+div.prob-item:first-child div.prob-background {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+div.prob-meta {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+div.prob-meta span.subject {
+  font-weight: 600;
+}
+
+div.prob-meta span.status {
+  width: 15%;
+  border-radius: 25px;
+  border: 1px solid white;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.prob-meta span.status.doing {
+  border-color: rgb(255, 228, 128);
+  color: rgb(255, 228, 128);
+}
+
+div.prob-meta span.status.undone {
+  border-color: #FFC900;
+  color: #FFC900;
+}
+
+div.prob-meta span.date {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+div.prob-bottom {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.prob-bottom span.name {
+  font-weight: 300;
+}
+
+div.prob-bottom span.go {
+  display: flex;
+  filter: opacity(0);
+  transition: filter 0.3s linear;
+}
+
+div.prob-bottom span.go img {
+  height: 1.1rem;
+  width: 1.1rem;
+  margin-left: 0.3rem;
+}
+
+div.prob-item:hover div.prob-background {
+  opacity: 1;
+}
+
+div.prob-item:hover span.go {
+  filter: opacity(0.9);
+}
