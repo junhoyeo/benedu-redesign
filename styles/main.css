@@ -156,7 +156,7 @@ div.stats div.overlay {
   );
 }
 
-div.stats img.illust {
+div.stats svg.illust {
   position: absolute;
   right: 0;
   bottom: 10px;
