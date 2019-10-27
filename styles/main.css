@@ -54,6 +54,8 @@ button.button {
 button#menu-button {
   margin-left: 0.5rem;
   display: none;
+  background-color: white;
+  font-weight: 400;
 }
 
 div.content { 
