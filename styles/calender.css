@@ -100,3 +100,47 @@ div.calender-cell span.day {
 div.calender-cell:not(:last-child) {
   border-right: 1px solid rgba(133, 133, 133, 0.7);
 }
+
+@media (max-width: 1068px) {
+  div.calender-cell span.date {
+    font-size: 1rem;
+  }
+
+  div.calender-cell span.day {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  div.calender-cell div.meta {
+    flex-direction: column;
+  }
+
+  div.calender-cell span.day {
+    margin-top: 2px;
+  }
+}
+
+div.calender-sep {
+  display: flex;
+  width: 50%;
+}
+
+div.calender-sep:not(:last-child) {
+  border-right: 1px solid rgba(133, 133, 133, 0.7);
+}
+
+@media (max-width: 480px) {
+  div.calender-row {
+    flex-direction: column;
+  }
+
+  div.calender-sep {
+    border: none;
+    width: 100%;
+  }
+
+  div.calender-sep:not(:last-child) {
+    border-right: 0;
+  }
+}

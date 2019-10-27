@@ -128,3 +128,53 @@ div.prob-item:hover span.go {
 div.prob-list.wrong span.status {
   width: 22%;
 }
+
+
+@media (max-width: 1300px) {
+  div.prob-list span.status {
+    width: 20%;
+  }
+
+  div.prob-list.wrong span.status {
+    width: 25%;
+  }
+
+  div.prob-meta {
+    justify-content: flex-start;
+  }
+
+  div.prob-list.wrong span.subject,
+  div.prob-list.wrong span.type,
+  div.prob-meta span.subject,
+  div.prob-meta span.type {
+    width: unset;
+    margin-left: 0.8rem;
+  }
+
+  div.prob-item span.date {
+    display: none;
+  }
+}
+
+@media (max-width: 1278px) {
+  div.prob-list.wrong span.status {
+    width: 30%;
+  }
+
+  div.prob-list.wrong span.status {
+    width: 28%;
+  }
+}
+
+@media (max-width: 1110px) {
+  div.prob-item span.date {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 390px) {
+  div.prob-item span.date {
+    display: none;
+  }
+}

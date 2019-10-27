@@ -62,6 +62,7 @@ div.word-item:nth-child(5) div.word-background {
 
 div.word-item span.word-en {
   text-transform: capitalize;
+  margin-left: 0.5rem;
 }
 
 div.word-item:hover div.word-background {
@@ -71,4 +72,37 @@ div.word-item:hover div.word-background {
 div.word-item:hover div.word-content {
   z-index: 2;
   font-weight: 500;
+}
+
+div.word-content div.word-meta {
+  display: none;
+}
+
+div.word-item.selected div.word-background {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 225, 76),
+    rgb(255, 208, 0)
+  );
+}
+
+div.word-item.selected span.word-en {
+  display: none;
+}
+
+div.word-item.selected div.word-content {
+  z-index: 2;
+}
+
+div.word-item.selected div.word-meta {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  position: relative;
+  color: #353535;
+}
+
+div.word-meta span.word-ko {
+  margin-left: 0.5rem;
+  font-weight: 600;
 }

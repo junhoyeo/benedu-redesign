@@ -97,6 +97,7 @@ div.sidemenu span.circle {
 
 div.main {
   width: inherit;
+  min-width: 0;
 }
 
 div.profile {
@@ -244,6 +245,11 @@ div.section-side {
   display: flex;
 }
 
+div.weather-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 div.weather-illust {
   display: flex;
   justify-content: center;
@@ -252,4 +258,153 @@ div.weather-illust {
 
 div.weather-illust svg {
   width: 50%;
+}
+
+div.main-wrap {
+  display: flex;
+  min-width: 0;
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+  div.content {
+    width: 95%;
+  }
+
+  div.navbar-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1350px) {
+  div.content {
+    width: 98%;
+  }
+
+  div.navbar-container {
+    width: 98%;
+  }
+}
+
+@media (max-width: 1110px) {
+  div.sidemenu {
+    display: none;
+  }
+
+  div.content {
+    width: 90%;
+  }
+
+  div.navbar-container {
+    width: 90%;
+  }
+
+  section.section {
+    padding: 1.2rem 1rem;
+  }
+
+  section.section.row {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  div.section-side {
+    padding: 1.2rem 1rem;
+    width: unset;
+  }
+
+  div.section-side:first-child {
+    margin-right: 0;
+  }
+
+  section.right-section {
+    padding: 1.2rem 1.5rem;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 964px) {
+  div.content {
+    width: 95%;
+  }
+
+  div.navbar-container {
+    width: 95%;
+  }
+
+  div.main-wrap {
+    flex-direction: column;
+    width: -webkit-fill-available;
+  }
+
+  div.right {
+    flex-direction: row;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.8rem;
+  }
+
+  section.right-section {
+    padding: 0;
+    width: 25%;
+  }
+}
+
+@media (max-width: 850px) {
+  div.right {
+    flex-direction: column;
+    width: unset;
+    padding: 0;
+  }
+
+  section.right-section {
+    width: unset;
+    padding: 1.2rem 1.5rem;
+  }
+
+  div.weather-wrap {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  div.weather-wrap div.table-list {
+    width: -webkit-fill-available;
+  }
+}
+
+@media (max-width: 650px) {
+  div.stats h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  div.stats h1 {
+    font-size: 2.2rem;
+  }
+
+  div.calender-cell div.meta {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  img.brand {
+    height: 45px;
+    width: 45px;
+  }
+
+  div.stats div.content {
+    padding-left: 1rem;
+  }
+
+  div.stats h1 {
+    margin-top: 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  div.weather-illust {
+    width: 200px;
+  }
 }
