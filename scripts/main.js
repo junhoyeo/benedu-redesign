@@ -164,8 +164,15 @@ function onToggleMenu() {
   if (isMenuOpen) {
     setTimeout(function () {
       sidemenuList.style.display = 'unset'
-    }, 400)
+    }, 500)
   } else {
     sidemenuList.style.display = 'none'
   }
 }
+
+window.addEventListener('resize', function(_) {
+  const width = window.innerWidth
+  if (width > 1110 && isMenuOpen) {
+    onToggleMenu()
+  }
+});

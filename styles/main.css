@@ -122,6 +122,10 @@ div.profile {
   align-items: center;
 }
 
+div.sidemenu li:first-child {
+  display: none;
+}
+
 div.profile img.image {
   height: 35px;
   width: 35px;
@@ -316,12 +320,24 @@ div.main-wrap {
     transition: width 0.5s linear;
     background-image: linear-gradient(to left, rgba(53, 53, 53, 0.8), rgba(26, 26, 26, 0.8));
 
-    padding-top: 0.8rem;
+    padding-top: 1.2rem;
   }
 
   div.sidemenu ul {
     display: none;
-    padding-left: 0.5rem;
+  }
+
+  div.sidemenu li:first-child {
+    display: flex;
+  }
+
+  div.sidemenu li {
+    margin-left: 0.5rem;
+  }
+
+  div.profile.top .image,
+  div.profile.top .name {
+    display: none;
   }
 
   button#menu-button {
