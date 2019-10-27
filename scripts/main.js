@@ -173,6 +173,7 @@ function onToggleMenu() {
 window.addEventListener('resize', function(_) {
   const width = window.innerWidth
   if (width > 1110 && isMenuOpen) {
+    sidemenu.style.width = '15rem'
     onToggleMenu()
   }
 });
