@@ -45,24 +45,38 @@ div.calender-cell {
   position: relative;
 }
 
+div.calender-cell div.tags,
 div.calender-cell div.today {
   position: absolute;
   bottom: 5px;
   left: 5px;
-  display: flex;
+}
 
+div.calender-cell div.today,
+div.calender-cell div.tag {
+  width: max-content;
   font-size: 0.9rem;
   font-weight: 300;
+  display: flex;
+  color: rgb(0, 199, 228);
+}
+
+div.calender-cell div.today {
   color: #ffd000;
 }
 
-div.calender-cell div.today span.circle {
+div.calender-cell div.today span.circle,
+div.calender-cell div.tag span.circle {
   align-self: center;
   margin-right: 0.3rem;
 
   border-radius: 50%;
   height: 10px;
   width: 10px;
+  background-color: rgb(0, 199, 228);
+}
+
+div.calender-cell div.today span.circle {
   background-image: linear-gradient(to right, rgb(255, 221, 51), rgb(255, 208, 0));
 }
 
