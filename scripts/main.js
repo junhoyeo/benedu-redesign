@@ -150,3 +150,22 @@ function onHoverWeather() {
     return
   weatherTimeline.restart()
 }
+
+const sidemenu = document.getElementById('sidemenu')
+const sidemenuList = sidemenu.getElementsByTagName('ul')[0]
+const topOverlay = document.getElementById('top-overlay')
+
+let isMenuOpen = false
+
+function onToggleMenu() {
+  sidemenu.style.width = (isMenuOpen) ? '0' : '15rem'
+  topOverlay.style.display = (isMenuOpen) ? 'none' : 'unset'
+  isMenuOpen = !isMenuOpen
+  if (isMenuOpen) {
+    setTimeout(function () {
+      sidemenuList.style.display = 'unset'
+    }, 400)
+  } else {
+    sidemenuList.style.display = 'none'
+  }
+}

@@ -18,6 +18,7 @@
 </head>
 <body>
   <div class="container">
+    <div id="top-overlay" onclick="onToggleMenu()"></div>
     <nav class="navbar">
       <div class="navbar-container">
         <a href="./main.html">
@@ -27,11 +28,12 @@
           <img class="image" src="https://api.dimigo.hs.kr/user_photo/photo1_002095_hanaro0704_jFGiKj.jpg" />
           <span class="name">1학년 5반 여준호</span>
           <a class="logout button" href="/">로그아웃</a>
+          <button id="menu-button" class="button" onclick="onToggleMenu()">메뉴</button>
         </div>
       </div>
     </nav>
     <div class="content">
-      <div class="sidemenu">
+      <div id="sidemenu" class="sidemenu">
         <!-- <div class="brand">
           베네듀
           <img src="./images/benedu.png">
