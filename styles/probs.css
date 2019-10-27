@@ -46,10 +46,6 @@ div.prob-meta {
   margin-bottom: 5px;
 }
 
-div.prob-meta span.subject {
-  font-weight: 600;
-}
-
 div.prob-meta span.status {
   width: 15%;
   border-radius: 25px;
@@ -62,18 +58,36 @@ div.prob-meta span.status {
   align-items: center;
 }
 
-div.prob-meta span.status.doing {
+div.prob-meta span.status.doing,
+div.prob-meta span.status.mid {
   border-color: rgb(255, 228, 128);
   color: rgb(255, 228, 128);
 }
 
-div.prob-meta span.status.undone {
+div.prob-meta span.status.undone,
+div.prob-meta span.status.high {
   border-color: #FFC900;
   color: #FFC900;
 }
 
+div.prob-meta span.subject {
+  font-weight: 600;
+  width: 15%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.prob-list.wrong span.type {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 div.prob-meta span.date {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -82,16 +96,19 @@ div.prob-bottom {
   z-index: 2;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 div.prob-bottom span.name {
   font-weight: 300;
+  word-break: keep-all;
 }
 
 div.prob-bottom span.go {
   display: flex;
   filter: opacity(0);
   transition: filter 0.3s linear;
+  min-width: fit-content;
 }
 
 div.prob-bottom span.go img {
@@ -106,4 +123,8 @@ div.prob-item:hover div.prob-background {
 
 div.prob-item:hover span.go {
   filter: opacity(0.9);
+}
+
+div.prob-list.wrong span.status {
+  width: 22%;
 }
